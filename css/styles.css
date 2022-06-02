@@ -1,0 +1,31 @@
+* {
+    font-family: 'Public Sans', sans-serif;
+}
+
+header {
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,.3) 100%, rgba(0,0,0,.6) 50%),url(/img/perritos-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.nav-box {
+    position: sticky;
+    display: flex;
+    top: 0;
+    background-color: rgb(247, 247, 247);
+}
+/* Poniendo a todos los <li> en línea */
+.nav-list {
+    display: flex;
+}
+
+/* Quitandole los puntitos a las listas */
+li {
+    list-style: none;
+}
+
+footer {
+    background-color: rgb(20, 20, 20);
+    padding: 30px;
+}
