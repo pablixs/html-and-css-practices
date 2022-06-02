@@ -25,6 +25,11 @@ li {
     list-style: none;
 }
 
+/* Quitandole el subrayado a los <a> */
+a {
+    text-decoration: none;
+}
+
 footer {
     background-color: rgb(20, 20, 20);
     padding: 30px;
