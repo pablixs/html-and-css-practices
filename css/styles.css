@@ -2,16 +2,11 @@
     font-family: 'Public Sans', sans-serif;
 }
 
-header {
-    height: 80vh;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,.3) 100%, rgba(0,0,0,.6) 50%),url(/img/perritos-bg.jpg) no-repeat center;
-    background-size: cover;
-}
-
 .nav-box {
     position: sticky;
     display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     background-color: rgb(247, 247, 247);
 }
@@ -23,14 +18,170 @@ header {
 /* Quitandole los puntitos a las listas */
 li {
     list-style: none;
+    padding: 3px 5px;
+    margin: 0 15px;
 }
 
 /* Quitandole el subrayado a los <a> */
 a {
     text-decoration: none;
+    color: #222;
+}
+
+a:hover {
+    color: rgb(128, 128, 128);
+    border-bottom: 1px solid #000;
+}
+
+header {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(0,0,0,.3) 100%, rgba(0,0,0,.6) 50%),url(/img/perritos-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.titulo-header {
+    color: #fff;
+    text-align: center;
+    padding: 5;
+}
+.titulo-header  h1 {
+    font-size: 3.5em;
+}
+
+.fotos-perritos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+.section-title {
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.section-title h2{
+    font-size: 1.5em;
+}
+
+.perritos-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+
+
+.img-perrito {
+    overflow: hidden;
+    border-radius: 25px;
+    transition: .3s ease-in-out;
+    
+}
+
+.img-perrito:hover {
+    transform: scale(1.090);
+}
+.img-perrito img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input,textarea, input:focus, textarea:focus {
+    outline: none;
+    height: 40px;
+    padding: 3px;
+}
+
+.contactanos-form {
+    min-width: 600px;
+}
+
+.first-label {
+    color: #E9BD5C;
+}
+.second-label {
+    color: #679EBC;
+}
+.nombre-input, .apellido-input, .email-input, .textarea {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.nombre-input{
+    margin-right: 5px;
+}
+.apellido-input {
+    margin-left: 5px;
+}
+
+.apellido-input,
+.nombre-input  {
+    width: 100%;
+}
+
+.email-input input {
+    width: 100%;
+}
+
+.textarea textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+.form-nombre_apellido {
+  display: flex;
+  width: 100%;
+}
+
+label {
+    margin: 5px 0;
 }
 
 footer {
     background-color: rgb(20, 20, 20);
     padding: 30px;
+}
+
+button {
+    width: 100%;
+    padding: 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: #679EBC;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+button:hover {
+    background-color: #4f788f;
+}
+
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.footer-titulo h2{
+    color: #fff;
+    font-size: 2em;
 }
